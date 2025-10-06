@@ -44,7 +44,7 @@ src/main/java/com/example/
 └── dto/                      # 데이터 전송 객체
 ```
 
-## 🚀 실행 방법
+## 실행 방법
 
 ### 1. PostgreSQL 사용 (권장)
 ```bash
@@ -65,14 +65,14 @@ docker-compose up -d
 ./gradlew bootRun --args='--spring.profiles.active=h2-server'
 ```
 
-## 🌐 접근 정보
+## 접근 정보
 
 - **API Base URL**: `http://localhost:8080/api`
 - **Swagger UI**: `http://localhost:8080/swagger-ui.html`
 - **Health Check**: `http://localhost:8080/actuator/health`
 - **H2 Console**: `http://localhost:8080/h2-console`
 
-## 🧪 테스트
+## 테스트
 
 ```bash
 # 전체 테스트 실행
@@ -85,7 +85,7 @@ docker-compose up -d
 ./check-h2.sh
 ```
 
-## 📚 주요 API
+## 주요 API
 
 ### 회원 관리
 - `POST /api/members` - 회원 생성
@@ -105,36 +105,15 @@ docker-compose up -d
 - `POST /api/payments/{id}/process` - 결제 처리
 - `POST /api/payments/{id}/refund` - 결제 환불
 
-## 🎯 구현 특징
 
-### 1. Clean Architecture 적용
-- **도메인 계층**: 비즈니스 로직과 규칙을 중심으로 설계
-- **애플리케이션 계층**: 유스케이스와 서비스 로직 구현
-- **인프라 계층**: 외부 시스템과의 연동 담당
-
-### 2. Domain-Driven Design 구현
-- **값 객체**: 이메일, 전화번호 등 불변 객체로 구현
-- **엔티티**: 회원, 주문, 결제의 생명주기 관리
-- **도메인 이벤트**: 회원 생성, 주문 완료 등 비즈니스 이벤트 발행
-
-### 3. CQRS 패턴 적용
-- **Command**: 데이터 변경 작업 (회원 생성, 주문 생성 등)
-- **Query**: 데이터 조회 작업 (회원 조회, 주문 조회 등)
-- **분리된 모델**: 명령과 쿼리의 독립적인 처리
-
-### 4. 이벤트 기반 아키텍처
-- **도메인 이벤트**: 비즈니스 로직의 결과를 이벤트로 발행
-- **느슨한 결합**: 이벤트를 통한 모듈 간 통신
-- **확장성**: 새로운 기능 추가 시 기존 코드 수정 최소화
-
-## 📖 상세 문서
+## 상세 문서
 
 - [API 문서](docs/api/API_DOCUMENTATION.md)
 - [아키텍처 분석](docs/technical/ARCHITECTURE_ANALYSIS_AND_IMPROVEMENTS.md)
 - [H2 데이터베이스 가이드](docs/technical/H2_DATABASE_GUIDE.md)
 - [면접 가이드](docs/guides/면접_가이드.md)
 
-## 🔧 프로젝트 설정
+## 프로젝트 설정
 
 ### 환경 변수
 - `SPRING_PROFILES_ACTIVE`: 활성 프로필 (default, h2-embedded, h2-generic, h2-server)
