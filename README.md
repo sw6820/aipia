@@ -12,12 +12,6 @@ Clean Architecture와 Domain-Driven Design을 적용한 확장 가능하고 유�
 - **결제 관리**: 결제 생성, 처리, 환불, 조회
 - **REST API**: 완전한 RESTful API 구현
 
-### 아키텍처 특징
-- **Clean Architecture**: 계층 분리 및 의존성 역전
-- **Domain-Driven Design**: 값 객체, 엔티티, 도메인 이벤트 활용
-- **CQRS 패턴**: 명령과 쿼리 분리
-- **이벤트 기반 아키텍처**: 도메인 이벤트를 통한 느슨한 결합
-
 ## 🛠️ 기술 스택
 
 - **Backend**: Spring Boot 3.2.0, Java 17
