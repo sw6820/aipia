@@ -1,10 +1,10 @@
-# 🛒 Member-Order-Payment System
+# Member-Order-Payment System
 
 **Spring Boot 기반 전자상거래 백엔드 시스템**
 
 Clean Architecture와 Domain-Driven Design을 적용한 확장 가능하고 유지보수가 용이한 전자상거래 시스템입니다.
 
-## 🎯 프로젝트 소개
+## 프로젝트 소개
 
 ### 핵심 기능
 - **회원 관리**: 회원 등록, 조회, 상태 관리
@@ -12,7 +12,7 @@ Clean Architecture와 Domain-Driven Design을 적용한 확장 가능하고 유�
 - **결제 관리**: 결제 생성, 처리, 환불, 조회
 - **REST API**: 완전한 RESTful API 구현
 
-## 🛠️ 기술 스택
+## 기술 스택
 
 - **Backend**: Spring Boot 3.2.0, Java 17
 - **Database**: PostgreSQL (Production) + H2 (Development/Testing)
@@ -21,7 +21,7 @@ Clean Architecture와 Domain-Driven Design을 적용한 확장 가능하고 유�
 - **Documentation**: Swagger/OpenAPI 3
 - **Containerization**: Docker, Docker Compose
 
-## 🏗️ 아키텍처 구조
+## 아키텍처 구조
 
 ```
 src/main/java/com/example/
@@ -127,11 +127,11 @@ docker-compose up -d
 
 ## 🎉 프로젝트 하이라이트
 
-- ✅ **완전한 테스트 커버리지**: 단위/통합/E2E 테스트
-- ✅ **다중 데이터베이스 지원**: PostgreSQL + H2 (3모드)
-- ✅ **완전한 문서화**: API 문서, 아키텍처 가이드
-- ✅ **자동화 스크립트**: 테스트/데모 스크립트 제공
-- ✅ **프로덕션 준비**: Docker, 모니터링, 로깅
+-  **완전한 테스트 커버리지**: 단위/통합/E2E 테스트
+-  **다중 데이터베이스 지원**: PostgreSQL + H2 (3모드)
+-  **완전한 문서화**: API 문서, 아키텍처 가이드
+-  **자동화 스크립트**: 테스트/데모 스크립트 제공
+-  **프로덕션 준비**: Docker, 모니터링, 로깅
 
 ---
 
