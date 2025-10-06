@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: member-order-payment-system
+  
+  datasource:
+    url: jdbc:postgresql://localhost:5432/member_order_payment_db
+    driver-class-name: org.postgresql.Driver
+    username: wjs
+    password: 
+  
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: UTC
+  
+
+server:
+  port: 8080
+
+# Actuator configuration for monitoring
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus,env,beans
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+
+logging:
+  level:
+    com.example: DEBUG
+    org.springframework.web: DEBUG
