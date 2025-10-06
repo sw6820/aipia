@@ -125,14 +125,5 @@ docker-compose up -d
 - **Generic**: 파일 기반, 데이터 지속성
 - **Server**: 서버 모드, 공유 환경
 
-## 🎉 프로젝트 하이라이트
-
--  **완전한 테스트 커버리지**: 단위/통합/E2E 테스트
--  **다중 데이터베이스 지원**: PostgreSQL + H2 (3모드)
--  **완전한 문서화**: API 문서, 아키텍처 가이드
--  **자동화 스크립트**: 테스트/데모 스크립트 제공
--  **프로덕션 준비**: Docker, 모니터링, 로깅
-
----
 
 **GitHub**: [https://github.com/sw6820/aipia](https://github.com/sw6820/aipia)
