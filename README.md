@@ -2,7 +2,7 @@
 
 **Spring Boot 기반 전자상거래 백엔드 시스템**
 
-Clean Architecture와 Domain-Driven Design을 적용한 확장 가능하고 유지보수가 용이한 전자상거래 시스템입니다.
+확장 가능하고 유지보수가 용이한 전자상거래 시스템입니다.
 
 ## 프로젝트 소개
 
